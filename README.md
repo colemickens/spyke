@@ -1,4 +1,1 @@
-spyke
-=====
-
-Signaling server written in Go with WebRTC sample applications
+This is a small signaling server written in Go and a web application with some WebRTC demos.

@@ -1,0 +1,26 @@
+<h1>chat</h1>
+
+<h2>{{room.Name}}</h2>
+
+<h3>{{status}}</h3>
+
+<ul id="videos">
+  <li id="localVideo">
+    <video src="{{localSource}}" class="localVideo" autoplay>
+    </video>
+  </li>
+  <li ng-repeat="remoteVideo in remoteVideos">
+    <!--
+    <div class="thumbnail">
+      <video>
+      </video>
+      <span class="remoteuserid">
+        {{user.id}}
+      </span>
+      <span class="username">
+        {{user.name}}
+      </span>
+    </div>
+    -->
+  </li>
+</ul>

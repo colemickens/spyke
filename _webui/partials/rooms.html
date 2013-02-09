@@ -1,0 +1,18 @@
+<h1>rooms</h1>
+
+create room:
+<form ng-model="createRoomForm">
+	<input name="Name" type="text" />
+	<button ng-click="createRoom()">create room</button>
+</form>
+
+filter rooms:
+<br />
+<input type="text" ng-model="roomNameFilter" /><button ng-click="refreshRooms()">refresh</button>
+<br />
+<br />
+<ol>
+  <li ng-repeat="room in rooms | filter:roomNameFilter" value="{{room.Id}}">
+    <a href="/#/chat/{{room.Id}}">{{room.Name}}({{room.Users.length}})</a> - {{room.Description}}
+  </li>
+</ol>
